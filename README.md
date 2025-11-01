@@ -18,7 +18,7 @@
 
 10. now on "2025_10_30_195851_create_posts_table" file we will design the table header row what the table will contain. so add $table->string('title') and $table->text('body') in the schema. then run the command 'php artisan migrate' to create the table in the db. so go to the "laravel_12_react_js_crud_back" in db and there is a folder created name "posts" and there u will find the table according to the schema.
 
-// Now rest of the flow chart is "laravel-12-react-js-crud-back" file i.e form 12.
+11. Now rest of the flow chart is "laravel-12-react-js-crud-back" file i.e form 12.
 
 12. add fillable in a Model => Post file what i added in the schema i.e title and body in the db
 
