@@ -57,3 +57,13 @@
 21.0 edit a data
 
 22.0 delete a post
+
+
+// Seeding (for sending fake data to the db). The seeding is not implemented this project. Seeding is applied in backebd_digi5 repo. The procedures are following:
+
+first make a seeder file in laravel
+1. run "php artisan make:seeder DomainHostSeeder"
+2. Then design the DomainHostSeeder for one of the page section in my case i am designing hero section.
+3. name of the seeder table name is as like as name of Schema table name in my case "domain_host_heroes"
+4. In file Seeder => Database Seeder in run block add your seeder name in my case "DomainHostSeeder" (One time)
+5. run "php artisan db:seed" if found error then run "php artisan migrate:fresh --seed" which will add data to the db
