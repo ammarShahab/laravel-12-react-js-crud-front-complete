@@ -12,15 +12,15 @@
 
 7. go to xammp => mysql admin
 
-8. now to create model and migration for post so in terminal "php artisan make:model Post -m" which will create a file in database => migration "2025_10_30_195851_create_posts_table"
+8. now to create model and migration for post so in terminal "php artisan make:model Post -m" which will create 2 files one is in database => migration "2025_10_30_195851_create_posts_table" and another is app => Model => Post
 
 9.In .env file change the DB_DATABASE=laravel_12_react_js_crud_back_api and in db create a new db according to the name "laravel_12_react_js_crud_back_api".
 
-10. now on "2025_10_30_195851_create_posts_table" file we will design the table header row what the table will contain. so add $table->string('title') and $table->text('body') in the schema. then run the command 'php artisan migrate' to create the table in the db. so go to the "laravel_12_react_js_crud_back" in db and there is a folder created name "posts" and there u will find the table according to the schema.
+10. now on "2025_10_30_195851_create_posts_table" file we will design the table header row what the table will contain. so add $table->string('title') and $table->text('body') in the schema. then run the command 'php artisan migrate' to create the table in the db. so go to the "laravel_12_react_js_crud_back_api" in db and there is a folder created name "posts" and there u will find the table according to the schema.
 
 11. Now rest of the flow chart is in "laravel-12-react-js-crud-back" file i.e form 12.
 
-12. add fillable in a Model => Post file what i added in the schema i.e title and body in the db
+12. add fillable in a app => Model => Post file what i added in the schema i.e title and body in the db
 
 13. now to install api in terminal run "php artisan install:api" and in terminal when say "One new database migration has been published. Would you like to run all pending database migrations? (yes/no) [yes]"
 
@@ -30,7 +30,7 @@
 
 16. now we are going to create resource controller by "php artisan make:controller PostController --resource" which will create a file name "PostController" in app => Http => Controllers => PostController where we will create all the crud methods.
 
-17. create Route then to see all routes run "php artisan route:list" u will see created all routes for PostController in terminal
+17. create Route then to see all routes run "php artisan route:list" u will see created all routes for PostController in terminal                                                           Note: here we created a rote name 'post' and from the frontend we will use that route for all the crud operation.
 
 18. checking in thunder client that the request is working or not on pasting the link 'http://127.0.0.1:8000/api/posts'
 
